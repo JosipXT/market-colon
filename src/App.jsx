@@ -412,7 +412,7 @@ const MOCK_DATA = [
 ];
 
 const CATEGORIES = [
-  { name: "Todos", icon: null },
+  { name: "Todas las categorías", icon: null },
   { name: "Hogar", icon: Wrench },
   { name: "Comida", icon: Utensils },
   { name: "Mascotas", icon: PawPrint },
@@ -466,7 +466,7 @@ const TypewriterEffect = () => {
 
 // --- COMPONENTE PRINCIPAL ---
 export default function App() {
-  const [activeTab, setActiveTab] = useState('recomendado');
+  const [activeTab, setActiveTab] = useState('todos');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [isTermsOpen, setIsTermsOpen] = useState(false);
@@ -518,12 +518,12 @@ export default function App() {
     }
   };
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('Todos');
+  const [selectedCategory, setSelectedCategory] = useState('Todas las categorías');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Filtrado
   const filteredProviders = MOCK_DATA.filter(provider => {
-    const matchesTab = provider.type === activeTab;
+    const matchesTab = activeTab === 'todos' || provider.type === activeTab;
     const query = searchQuery.toLowerCase().trim();
 
     // Búsqueda inteligente
@@ -533,7 +533,7 @@ export default function App() {
       provider.category.toLowerCase().includes(query) ||
       (provider.keywords && provider.keywords.some(kw => kw.toLowerCase().includes(query)));
 
-    const matchesCategory = selectedCategory === "Todos" || provider.category === selectedCategory;
+    const matchesCategory = selectedCategory === "Todas las categorías" || provider.category === selectedCategory;
 
     return matchesTab && matchesSearch && matchesCategory;
   });
@@ -567,10 +567,10 @@ export default function App() {
       {isModalOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
           <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" onClick={() => !isSubmitting && !submitSuccess && setIsModalOpen(false)}></div>
-          <div className="relative bg-white rounded-3xl w-full max-w-lg p-6 md:p-8 shadow-2xl animate-in fade-in zoom-in duration-300">
+          <div className="relative bg-white rounded-3xl w-full max-w-lg p-6 md:p-8 shadow-2xl animate-in fade-in zoom-in duration-300 max-h-[90vh] overflow-y-auto">
             <button
               onClick={() => setIsModalOpen(false)}
-              className="absolute top-4 right-4 bg-slate-100 hover:bg-slate-200 text-slate-500 rounded-full p-2 transition-colors"
+              className="absolute top-4 right-4 bg-slate-100 hover:bg-slate-200 text-slate-500 rounded-full p-2 transition-colors z-10"
             >
               <X className="w-5 h-5" />
             </button>
@@ -829,31 +829,42 @@ export default function App() {
       <main id="directorio" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
         {/* Section Header & Tabs */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-6">
-          <h2 className="text-3xl font-bold text-[#2C3E50]">Directorio de Servicios</h2>
+        <div className="flex flex-col mb-10 gap-6">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+            <div className="max-w-xl">
+              <h2 className="text-3xl font-bold text-[#2C3E50] mb-3">Directorio de Servicios</h2>
+              <p className="text-slate-500 text-sm md:text-base leading-relaxed">
+                Escoge la categoría que desees visualizar: recomendaciones validadas de vecinos del condominio, proveedores de servicios que viven dentro del condominio, o comercios de Ciudad Colón disponibles.
+              </p>
+            </div>
 
-          {/* Modern Toggle Tabs */}
-          <div className="flex p-1 bg-slate-100/80 rounded-xl md:rounded-full w-full md:w-auto overflow-x-auto hide-scrollbar border border-slate-200/60 shadow-inner">
-            {[
-              { id: 'recomendado', label: 'Recomendados', icon: ShieldCheck },
-              { id: 'vecino', label: 'De Vecinos', icon: User },
-              { id: 'general', label: 'Ciudad Colón', icon: Building }
-            ].map((tab) => {
-              const Icon = tab.icon;
-              return (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`flex items-center justify-center px-5 py-2.5 rounded-lg md:rounded-full text-sm font-semibold transition-all whitespace-nowrap min-w-[120px] ${activeTab === tab.id
-                    ? 'bg-white text-[#2C3E50] shadow-sm ring-1 ring-slate-200'
-                    : 'text-slate-500 hover:text-slate-800 hover:bg-slate-200/50'
-                    }`}
-                >
-                  <Icon className="w-4 h-4 mr-2" />
-                  {tab.label}
-                </button>
-              )
-            })}
+            {/* Modern Toggle Tabs */}
+            <div className="flex flex-col w-full md:w-auto">
+              <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2 ml-2 hidden md:block text-right">Filtrar Profesionales</span>
+              <div className="flex p-1 bg-slate-100/80 rounded-xl md:rounded-full w-full overflow-x-auto hide-scrollbar border border-slate-200/60 shadow-inner">
+                {[
+                  { id: 'todos', label: 'Todos', icon: Globe },
+                  { id: 'recomendado', label: 'Recomendados', icon: ShieldCheck },
+                  { id: 'vecino', label: 'Vecinos', icon: User },
+                  { id: 'general', label: 'Ciudad Colón', icon: Building }
+                ].map((tab) => {
+                  const Icon = tab.icon;
+                  return (
+                    <button
+                      key={tab.id}
+                      onClick={() => setActiveTab(tab.id)}
+                      className={`flex items-center justify-center px-4 md:px-5 py-2.5 rounded-lg md:rounded-full text-sm font-semibold transition-all whitespace-nowrap min-w-[100px] md:min-w-[120px] ${activeTab === tab.id
+                        ? 'bg-white text-[#2C3E50] shadow-sm ring-1 ring-slate-200'
+                        : 'text-slate-500 hover:text-slate-800 hover:bg-slate-200/50'
+                        }`}
+                    >
+                      <Icon className="w-4 h-4 mr-2" />
+                      {tab.label}
+                    </button>
+                  )
+                })}
+              </div>
+            </div>
           </div>
         </div>
 
@@ -897,7 +908,7 @@ export default function App() {
             <h3 className="text-xl font-bold text-slate-800 mb-2">No encontramos resultados</h3>
             <p className="text-slate-500 max-w-md mx-auto">No hay servicios que coincidan con tu búsqueda en esta categoría. Intenta con otros términos o cambia de pestaña.</p>
             <button
-              onClick={() => { setSearchQuery(''); setSelectedCategory('Todos'); }}
+              onClick={() => { setSearchQuery(''); setSelectedCategory('Todas las categorías'); }}
               className="mt-6 text-[#DCA742] font-semibold hover:underline"
             >
               Limpiar filtros
