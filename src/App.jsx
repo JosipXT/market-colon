@@ -24,7 +24,7 @@ const MOCK_DATA = [
     phone: "8628-9020",
     description: "Salón de belleza. Especialista en cabello colocho.",
     location: "Al costado de la Farmacia Mora, sobre calle principal",
-    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&q=80&w=600",
     keywords: ["salón", "belleza", "cabello", "colocho", "peluquería", "mariandrea"]
   },
   {
