@@ -5,6 +5,18 @@ import { Globe, Search, Star, MapPin, Phone, MessageCircle, User, ShieldCheck, B
 const MOCK_DATA = [
   // --- Condominio Caoba (Locales/Recomendados) ---
   {
+    id: 55,
+    name: "Núcleo Marketing Studio",
+    type: "vecino",
+    category: "Servicios",
+    phone: "8861-9239",
+    whatsapp2: "6155-8585",
+    description: "Marketing y contenido para negocios y emprendedores: redes sociales, diseño, video, automatizaciones, chatbots y páginas web. Atención rápida por WhatsApp.",
+    house: "Casa 44",
+    image: "https://imagedelivery.net/0F92Czxm-YSY0EqFzZS4jA/8f8d7755-8ace-4e2b-6307-bc4d27675c00/public",
+    keywords: ["marketing", "agencia", "redes sociales", "diseño", "video", "páginas web", "chatbots", "núcleo", "automatizaciones"]
+  },
+  {
     id: 54,
     name: "Mermeladas Artesanales - Vilà Vilà",
     type: "recomendado",
@@ -1199,6 +1211,17 @@ export default function App() {
                         </a>
                       )}
                     </div>
+
+                    {provider.whatsapp2 && (
+                      <a
+                        href={`https://wa.me/506${provider.whatsapp2.replace('-', '')}?text=Hola,%20los%20encontré%20en%20Market%20Colón...`}
+                        target="_blank" rel="noreferrer"
+                        className="bg-[#25D366] hover:bg-[#20bd5a] text-white py-2.5 rounded-xl flex items-center justify-center font-semibold transition-colors shadow-sm w-full"
+                      >
+                        <MessageCircle className="w-4 h-4 mr-2" />
+                        WhatsApp Josip
+                      </a>
+                    )}
 
                     {provider.website && (
                       <a
