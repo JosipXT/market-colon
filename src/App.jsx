@@ -23,7 +23,7 @@ const MOCK_DATA = [
     phone: "7274-4911",
     description: "Servicio profesional de autospa y detailing para tu vehículo.",
     location: "Ciudad Colón",
-    image: "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1550503195-3df5b448cc2a?auto=format&fit=crop&q=80&w=600",
     keywords: ["lavacar", "autospa", "lavado", "autos", "detailing", "insanity"]
   },
   {
@@ -45,7 +45,7 @@ const MOCK_DATA = [
     phone: "7275-0206",
     description: "Lavandería profesional de ropa y servicio de dry cleaning.",
     location: "Ciudad Colón",
-    image: "https://images.unsplash.com/photo-1517677208171-0bc6725a3fc5?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&q=80&w=600",
     keywords: ["lavandería", "ropa", "dry cleaning", "lavado", "planchado", "tintorería"]
   },
   {
@@ -78,7 +78,7 @@ const MOCK_DATA = [
     phone: "8617-3032",
     description: "Venta de deliciosas alitas (wings) y comida preparada.",
     location: "Ciudad Colón",
-    image: "https://images.unsplash.com/photo-1569691899455-88464f6d3310?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=600",
     keywords: ["alitas", "wings", "comida", "comida rápida", "wingy", "pollo"]
   },
   {
@@ -101,7 +101,7 @@ const MOCK_DATA = [
     phone: "8651-1652",
     description: "Mantenimientos e instalaciones de aires acondicionados",
     house: "Casa 76",
-    image: "https://images.unsplash.com/photo-1621905252870-b962cd99a4e8?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=600",
     keywords: ["aire acondicionado", "a/c", "mantenimiento", "instalación", "doy aire", "clima"]
   },
   {
