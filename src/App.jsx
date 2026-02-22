@@ -5,6 +5,18 @@ import { Globe, Search, Star, MapPin, Phone, MessageCircle, User, ShieldCheck, B
 const MOCK_DATA = [
   // --- Condominio Caoba (Locales/Recomendados) ---
   {
+    id: 53,
+    name: "The Good Way",
+    type: "general",
+    category: "Salud",
+    phone: "7138-0518",
+    website: "https://www.instagram.com/thegoodwaycr?igsh=MXNveHJ3MTVyODltOQ==",
+    description: "Servicios de nutrición",
+    location: "100 m Oeste de la Escuela Rogelio Fernández Güell, dentro de Enjoy Studio",
+    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=600",
+    keywords: ["nutrición", "nutricionista", "salud", "dieta", "alimentación", "the good way", "enjoy studio"]
+  },
+  {
     id: 52,
     name: "Mariandrea Salon",
     type: "general",
