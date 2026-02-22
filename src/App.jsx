@@ -5,6 +5,29 @@ import { Globe, Search, Star, MapPin, Phone, MessageCircle, User, ShieldCheck, B
 const MOCK_DATA = [
   // --- Condominio Caoba (Locales/Recomendados) ---
   {
+    id: 52,
+    name: "Mariandrea Salon",
+    type: "general",
+    category: "Servicios",
+    phone: "8628-9020",
+    description: "Salón de belleza. Especialista en cabello colocho.",
+    location: "Al costado de la Farmacia Mora, sobre calle principal",
+    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=600",
+    keywords: ["salón", "belleza", "cabello", "colocho", "peluquería", "mariandrea"]
+  },
+  {
+    id: 51,
+    name: "Piscina Municipal Mora",
+    type: "general",
+    category: "Educación",
+    phone: "8509-4510",
+    website: "https://www.facebook.com/share/1CdHsM3VVR/",
+    description: "Clases de natación",
+    location: "Barrio San Bosco, detrás del CTP de Mora",
+    image: "https://images.unsplash.com/photo-1576610616656-d3aa5d1f4534?auto=format&fit=crop&q=80&w=600",
+    keywords: ["piscina", "natación", "clases", "deporte", "ejercicio", "municipal", "mora"]
+  },
+  {
     id: 50,
     name: "Lavacar RAE",
     type: "recomendado",
