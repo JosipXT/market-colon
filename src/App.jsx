@@ -5,6 +5,18 @@ import { Globe, Search, Star, MapPin, Phone, MessageCircle, User, ShieldCheck, B
 const MOCK_DATA = [
   // --- Condominio Caoba (Locales/Recomendados) ---
   {
+    id: 56,
+    name: "Sari Fusión Mágica",
+    type: "general",
+    category: "Comida",
+    phone: "4052-3142",
+    website: "https://www.instagram.com/sari_fusionmagica/",
+    description: "Comida fusión colombiana y tica. Una experiencia mágica de sabores.",
+    location: "Ciudad Colón",
+    image: "https://imagedelivery.net/0F92Czxm-YSY0EqFzZS4jA/1158fb56-4bdf-4573-ade2-f5e75eb17100/public",
+    keywords: ["comida", "fusión", "colombiana", "tica", "restaurante", "sari", "sari fusión mágica", "almuerzo", "cena"]
+  },
+  {
     id: 55,
     name: "Núcleo Marketing Studio",
     type: "vecino",
@@ -1219,7 +1231,7 @@ export default function App() {
                         className="bg-[#25D366] hover:bg-[#20bd5a] text-white py-2.5 rounded-xl flex items-center justify-center font-semibold transition-colors shadow-sm w-full"
                       >
                         <MessageCircle className="w-4 h-4 mr-2" />
-                        WhatsApp Josip
+                        WhatsApp #2
                       </a>
                     )}
 
