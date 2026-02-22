@@ -442,7 +442,7 @@ const MOCK_DATA = [
   },
   {
     id: 2,
-    name: "Ingeniería Alonso",
+    name: "Alterna Electromecánica S.A",
     type: "vecino",
     category: "Hogar",
     phone: "8781-7426",
