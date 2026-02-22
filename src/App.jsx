@@ -25,7 +25,7 @@ const MOCK_DATA = [
     description: "Todo lo que necesitas, en un solo lugar. Compra ya. Ofertas.",
     location: "San José, 25 metros este del ICE de Ciudad Colón, Costa Rica.",
     image: "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=600",
-    keywords: ["bebés", "outlet", "ropa", "niños", "maternidad", "mamás", "mini mundo", "ofertas"]
+    keywords: ["bebés", "bebes", "cosas para bebes", "productos para bebes", "outlet", "ropa", "niños", "maternidad", "mamás", "mini mundo", "ofertas"]
   },
   {
     id: 36,
