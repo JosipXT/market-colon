@@ -20,6 +20,7 @@ const MOCK_DATA = [
     name: "Mini Mundos CR",
     type: "recomendado",
     category: "Servicios",
+    phone: "8606-3350",
     website: "https://chat.whatsapp.com/BKYY1iYNLQL4N2dZTMLxAx?mode=gi_t",
     description: "Outlet de cosas de bebés muy útil para las mamás. Únete al grupo de WhatsApp para ver los artículos recomendados por otras mamás.",
     location: "Envíos / Grupo de WhatsApp",
