@@ -46,7 +46,7 @@ const MOCK_DATA = [
     phone: "7274-4911",
     description: "Servicio profesional de autospa y detailing para tu vehículo.",
     location: "Ciudad Colón",
-    image: "https://images.unsplash.com/photo-1550503195-3df5b448cc2a?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=600",
     keywords: ["lavacar", "autospa", "lavado", "autos", "detailing", "insanity"]
   },
   {
@@ -101,7 +101,7 @@ const MOCK_DATA = [
     phone: "8617-3032",
     description: "Venta de deliciosas alitas (wings) y comida preparada.",
     location: "Ciudad Colón",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=600",
+    image: "https://imagedelivery.net/0F92Czxm-YSY0EqFzZS4jA/172de7ec-78cb-4567-a850-f1eac6645800/public",
     keywords: ["alitas", "wings", "comida", "comida rápida", "wingy", "pollo"]
   },
   {
