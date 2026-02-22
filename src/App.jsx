@@ -263,7 +263,7 @@ const MOCK_DATA = [
     phone: "8846-7433",
     description: "Deliciosas hamburguesas artesanales preparadas por tus vecinos. Excelente sabor y calidad directo a tu puerta.",
     house: "Casa 90",
-    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=600",
+    image: "https://imagedelivery.net/0F92Czxm-YSY0EqFzZS4jA/3f11c9d0-2209-4e73-1915-df8c1ad5af00/public",
     keywords: ["hamburguesas", "comida", "comida rápida", "gallohaus", "burger", "cena"]
   },
   {
