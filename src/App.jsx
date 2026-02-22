@@ -430,9 +430,9 @@ const TypewriterEffect = () => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const typeSpeed = 25;
-    const deleteSpeed = 15;
-    const delayBetweenWords = 250;
+    const typeSpeed = 50;
+    const deleteSpeed = 30;
+    const delayBetweenWords = 500;
 
     const handleTyping = () => {
       const fullWord = words[currentWordIndex];
