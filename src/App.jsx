@@ -5,6 +5,18 @@ import { Globe, Search, Star, MapPin, Phone, MessageCircle, User, ShieldCheck, B
 const MOCK_DATA = [
   // --- Condominio Caoba (Locales/Recomendados) ---
   {
+    id: 54,
+    name: "Mermeladas Artesanales - Vilà Vilà",
+    type: "general",
+    category: "Comida",
+    phone: "6007-2706",
+    website: "https://www.vilavilacr.com/",
+    description: "En Vilà Vilà creamos mucho más que mermeladas o productos saludables. Ofrecemos opciones 100 % clean food, elaboradas con ingredientes premium, sin químicos, sin conservantes y sin azúcares refinados.",
+    location: "Ciudad Colón",
+    image: "https://imagedelivery.net/0F92Czxm-YSY0EqFzZS4jA/918819a6-5e2d-4401-d697-33d65ca29700/public",
+    keywords: ["mermeladas", "artesanales", "saludables", "clean food", "premium", "vilà vilà", "comida", "sin azúcar"]
+  },
+  {
     id: 53,
     name: "The Good Way",
     type: "general",
