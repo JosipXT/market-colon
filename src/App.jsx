@@ -5,6 +5,64 @@ import { Globe, Search, Star, MapPin, Phone, MessageCircle, User, ShieldCheck, B
 const MOCK_DATA = [
   // --- Condominio Caoba (Locales/Recomendados) ---
   {
+    id: 43,
+    name: "Bed & Winnie's",
+    type: "general",
+    category: "Mascotas",
+    phone: "6010-7070",
+    website: "https://www.instagram.com/bed_and_winnies?igsh=Yzh2YXA3Z3dlMmZ0",
+    description: "Guardería y hotel para perritos",
+    location: "Del Super Mora 300 m Oeste",
+    image: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=600",
+    keywords: ["perros", "mascotas", "guardería", "hotel", "cuido", "bed and winnies", "perritos"]
+  },
+  {
+    id: 42,
+    name: "Doy Aire",
+    type: "vecino",
+    category: "Hogar",
+    phone: "8651-1652",
+    description: "Mantenimientos e instalaciones de aires acondicionados",
+    house: "Casa 76",
+    image: "https://images.unsplash.com/photo-1594900762142-ff0f6dbb6ded?auto=format&fit=crop&q=80&w=600",
+    keywords: ["aire acondicionado", "a/c", "mantenimiento", "instalación", "doy aire", "clima"]
+  },
+  {
+    id: 41,
+    name: "Clínica Fisioterapia Alejandra Porras",
+    type: "general",
+    category: "Salud",
+    phone: "8724-2447",
+    description: "Terapia física",
+    location: "25 m Oeste del Banco Popular",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=600",
+    keywords: ["fisioterapia", "terapia física", "rehabilitación", "salud", "masajes", "alejandra porras"]
+  },
+  {
+    id: 40,
+    name: "Enjoy Studio",
+    type: "general",
+    category: "Salud",
+    phone: "7138-0518",
+    website: "https://www.instagram.com/enjoystudiocr?igsh=M201ajdza2s0ejZp",
+    description: "Clases de Pilates, Barre y Yoga.",
+    location: "100 m Oeste de la Escuela Rogelio Fernández Güell",
+    image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=600",
+    keywords: ["pilates", "barre", "yoga", "ejercicio", "salud", "bienestar", "enjoy studio"]
+  },
+  {
+    id: 39,
+    name: "Dental Love",
+    type: "general",
+    category: "Salud",
+    phone: "8972-8558",
+    website: "https://www.instagram.com/dental.lovecr?igsh=cjh4eDhnbG550Wdn",
+    description: "Servicios Odontológicos",
+    location: "25 m Oeste del Banco Popular",
+    image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=600",
+    keywords: ["dentista", "odontología", "salud", "dientes", "dental love", "clínica dental"]
+  },
+  {
     id: 38,
     name: "Mauricio Aires Acondicionados",
     type: "recomendado",
