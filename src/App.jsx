@@ -17,15 +17,15 @@ const MOCK_DATA = [
   },
   {
     id: 37,
-    name: "Mini Mundos CR",
+    name: "Mini Mundo",
     type: "recomendado",
     category: "Servicios",
     phone: "8606-3350",
-    website: "https://chat.whatsapp.com/BKYY1iYNLQL4N2dZTMLxAx?mode=gi_t",
-    description: "Outlet de cosas de bebés muy útil para las mamás. Únete al grupo de WhatsApp para ver los artículos recomendados por otras mamás.",
-    location: "Envíos / Grupo de WhatsApp",
+    whatsappGroup: "https://chat.whatsapp.com/BKYY1iYNLQL4N2dZTMLxAx?mode=gi_t",
+    description: "Todo lo que necesitas, en un solo lugar. Compra ya. Ofertas.",
+    location: "San José, 25 metros este del ICE de Ciudad Colón, Costa Rica.",
     image: "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=600",
-    keywords: ["bebés", "outlet", "ropa", "niños", "maternidad", "mamás", "mini mundos"]
+    keywords: ["bebés", "outlet", "ropa", "niños", "maternidad", "mamás", "mini mundo", "ofertas"]
   },
   {
     id: 36,
@@ -995,33 +995,50 @@ export default function App() {
                   </div>
 
                   {/* Actions */}
-                  < div className={`grid ${(provider.phone && /^[678]/.test(provider.phone.replace(/\D/g, ''))) || provider.website ? 'grid-cols-2 gap-3' : 'grid-cols-1'} mt-auto`}>
-                    {provider.phone && /^[678]/.test(provider.phone.replace(/\D/g, '')) ? (
-                      <a
-                        href={`https://wa.me/506${provider.phone.replace('-', '')}?text=Hola,%20los%20encontré%20en%20Market%20Colón...`}
-                        target="_blank" rel="noreferrer"
-                        className="bg-[#25D366] hover:bg-[#20bd5a] text-white py-2.5 rounded-xl flex items-center justify-center font-semibold transition-colors shadow-sm"
-                      >
-                        <MessageCircle className="w-4 h-4 mr-2" />
-                        WhatsApp
-                      </a>
-                    ) : provider.website ? (
+                  <div className="flex flex-col gap-2 mt-auto">
+                    <div className={`grid ${(provider.phone && /^[678]/.test(provider.phone.replace(/\D/g, ''))) ? 'grid-cols-2 gap-3' : 'grid-cols-1'}`}>
+                      {provider.phone && /^[678]/.test(provider.phone.replace(/\D/g, '')) && (
+                        <a
+                          href={`https://wa.me/506${provider.phone.replace('-', '')}?text=Hola,%20los%20encontré%20en%20Market%20Colón...`}
+                          target="_blank" rel="noreferrer"
+                          className="bg-[#25D366] hover:bg-[#20bd5a] text-white py-2.5 rounded-xl flex items-center justify-center font-semibold transition-colors shadow-sm"
+                        >
+                          <MessageCircle className="w-4 h-4 mr-2" />
+                          WhatsApp
+                        </a>
+                      )}
+                      {provider.phone && (
+                        <a
+                          href={`tel:+506${provider.phone.replace('-', '')}`}
+                          className="bg-slate-100 hover:bg-slate-200 text-[#2C3E50] py-2.5 rounded-xl flex items-center justify-center font-semibold transition-colors"
+                        >
+                          <Phone className="w-4 h-4 mr-2" />
+                          Llamar
+                        </a>
+                      )}
+                    </div>
+
+                    {provider.website && (
                       <a
                         href={provider.website}
                         target="_blank" rel="noreferrer"
-                        className="bg-[#2C3E50] hover:bg-slate-800 text-white py-2.5 rounded-xl flex items-center justify-center font-semibold transition-colors shadow-sm"
+                        className="bg-[#2C3E50] hover:bg-slate-800 text-white py-2.5 rounded-xl flex items-center justify-center font-semibold transition-colors shadow-sm w-full"
                       >
                         <Globe className="w-4 h-4 mr-2" />
                         Sitio Web
                       </a>
-                    ) : null}
-                    <a
-                      href={`tel:+506${provider.phone.replace('-', '')}`}
-                      className="bg-slate-100 hover:bg-slate-200 text-[#2C3E50] py-2.5 rounded-xl flex items-center justify-center font-semibold transition-colors"
-                    >
-                      <Phone className="w-4 h-4 mr-2" />
-                      Llamar
-                    </a>
+                    )}
+
+                    {provider.whatsappGroup && (
+                      <a
+                        href={provider.whatsappGroup}
+                        target="_blank" rel="noreferrer"
+                        className="bg-emerald-100 hover:bg-emerald-200 text-emerald-800 border border-emerald-200 py-2.5 rounded-xl flex items-center justify-center font-semibold transition-colors w-full shadow-sm"
+                      >
+                        <MessageCircle className="w-4 h-4 mr-2 text-emerald-600" />
+                        Unirse al Grupo
+                      </a>
+                    )}
                   </div>
                 </div>
               </div >
