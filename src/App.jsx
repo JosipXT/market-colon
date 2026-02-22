@@ -5,6 +5,28 @@ import { Globe, Search, Star, MapPin, Phone, MessageCircle, User, ShieldCheck, B
 const MOCK_DATA = [
   // --- Condominio Caoba (Locales/Recomendados) ---
   {
+    id: 38,
+    name: "Mauricio Aires Acondicionados",
+    type: "recomendado",
+    category: "Hogar",
+    phone: "8604-0842",
+    description: "Servicio recomendado por vecinos para instalación y mantenimiento de aires acondicionados.",
+    location: "Viene a Condominio Caoba",
+    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=600",
+    keywords: ["aire acondicionado", "a/c", "mantenimiento", "instalación", "mauricio", "clima"]
+  },
+  {
+    id: 37,
+    name: "Mini Mundos CR",
+    type: "recomendado",
+    category: "Servicios",
+    website: "https://chat.whatsapp.com/BKYY1iYNLQL4N2dZTMLxAx?mode=gi_t",
+    description: "Outlet de cosas de bebés muy útil para las mamás. Únete al grupo de WhatsApp para ver los artículos recomendados por otras mamás.",
+    location: "Envíos / Grupo de WhatsApp",
+    image: "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=600",
+    keywords: ["bebés", "outlet", "ropa", "niños", "maternidad", "mamás", "mini mundos"]
+  },
+  {
     id: 36,
     name: "Manileño Barbershop",
     type: "general",
