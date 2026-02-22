@@ -424,15 +424,15 @@ const CATEGORIES = [
 
 // --- COMPONENTE ANIMACIÓN DE ESCRITURA ---
 const TypewriterEffect = () => {
-  const words = ["mecánico de confianza.", "tutor para tus hijos.", "electricista experto.", "postre delicioso.", "fontanero rápido."];
+  const words = ["mecánico de confianza.", "barbero favorito.", "electricista experto.", "postre delicioso.", "fontanero rápido."];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const typeSpeed = 100;
-    const deleteSpeed = 50;
-    const delayBetweenWords = 2000;
+    const typeSpeed = 25;
+    const deleteSpeed = 15;
+    const delayBetweenWords = 250;
 
     const handleTyping = () => {
       const fullWord = words[currentWordIndex];
@@ -457,7 +457,7 @@ const TypewriterEffect = () => {
   }, [currentText, isDeleting, currentWordIndex]);
 
   return (
-    <span className="text-[#DCA742] font-semibold inline-block min-w-[280px] md:min-w-[400px]">
+    <span className="text-[#DCA742] font-semibold inline-block">
       {currentText}
       <span className="animate-pulse border-r-2 border-[#DCA742] ml-1"></span>
     </span>
@@ -779,11 +779,13 @@ export default function App() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 md:pt-32 md:pb-32 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-[#2C3E50] tracking-tight mb-6 leading-tight">
-              Encuentra tu <br className="md:hidden" />
-              <TypewriterEffect />
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-[#2C3E50] tracking-tight mb-6 leading-tight flex flex-col items-center min-h-[140px] md:min-h-[180px]">
+              <span className="mb-2 md:mb-4">Encuentra tu</span>
+              <div className="h-[60px] md:h-[90px] flex justify-center w-full">
+                <TypewriterEffect />
+              </div>
             </h1>
-            <p className="mt-6 text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+            <p className="mt-2 text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
               La red de confianza de <strong>Condominio Caoba</strong>. Descubre servicios recomendados por tus vecinos o contacta directamente a la comunidad en Ciudad Colón.
             </p>
 
