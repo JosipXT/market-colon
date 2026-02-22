@@ -5,6 +5,83 @@ import { Globe, Search, Star, MapPin, Phone, MessageCircle, User, ShieldCheck, B
 const MOCK_DATA = [
   // --- Condominio Caoba (Locales/Recomendados) ---
   {
+    id: 50,
+    name: "Lavacar RAE",
+    type: "recomendado",
+    category: "Autos",
+    phone: "8338-8256",
+    description: "Servicio de lavado de autos en Ciudad Colón.",
+    location: "Ciudad Colón",
+    image: "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=600",
+    keywords: ["lavacar", "lavado automotriz", "lavado", "autos", "limpieza", "rae"]
+  },
+  {
+    id: 49,
+    name: "Insanity Autospa",
+    type: "recomendado",
+    category: "Autos",
+    phone: "7274-4911",
+    description: "Servicio profesional de autospa y detailing para tu vehículo.",
+    location: "Ciudad Colón",
+    image: "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&q=80&w=600",
+    keywords: ["lavacar", "autospa", "lavado", "autos", "detailing", "insanity"]
+  },
+  {
+    id: 48,
+    name: "Repuestos Delgado Lavadora",
+    type: "recomendado",
+    category: "Hogar",
+    phone: "8835-6277",
+    description: "Reparación profesional de lavadoras y venta de repuestos.",
+    location: "Ciudad Colón",
+    image: "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&q=80&w=600",
+    keywords: ["lavadoras", "reparación", "línea blanca", "repuestos", "delgado"]
+  },
+  {
+    id: 47,
+    name: "Lavandería & Dry Cleaning",
+    type: "recomendado",
+    category: "Servicios",
+    phone: "7275-0206",
+    description: "Lavandería profesional de ropa y servicio de dry cleaning.",
+    location: "Ciudad Colón",
+    image: "https://images.unsplash.com/photo-1517677208171-0bc6725a3fc5?auto=format&fit=crop&q=80&w=600",
+    keywords: ["lavandería", "ropa", "dry cleaning", "lavado", "planchado", "tintorería"]
+  },
+  {
+    id: 46,
+    name: "Wados",
+    type: "recomendado",
+    category: "Mascotas",
+    phone: "8751-5227",
+    description: "Tienda de mascotas y servicios de clínica veterinaria.",
+    location: "Ciudad Colón",
+    image: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=600",
+    keywords: ["mascotas", "veterinaria", "perros", "gatos", "tienda", "wados"]
+  },
+  {
+    id: 45,
+    name: "Lanco Pinturas",
+    type: "recomendado",
+    category: "Hogar",
+    phone: "8454-8374",
+    description: "Tienda de pinturas Lanco y accesorios para el hogar.",
+    location: "Ciudad Colón",
+    image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&q=80&w=600",
+    keywords: ["pinturas", "lanco", "ferretería", "remodelación", "hogar", "pintor"]
+  },
+  {
+    id: 44,
+    name: "Wingy",
+    type: "recomendado",
+    category: "Comida",
+    phone: "8617-3032",
+    description: "Venta de deliciosas alitas (wings) y comida preparada.",
+    location: "Ciudad Colón",
+    image: "https://images.unsplash.com/photo-1569691899455-88464f6d3310?auto=format&fit=crop&q=80&w=600",
+    keywords: ["alitas", "wings", "comida", "comida rápida", "wingy", "pollo"]
+  },
+  {
     id: 43,
     name: "Bed & Winnie's",
     type: "general",
@@ -24,7 +101,7 @@ const MOCK_DATA = [
     phone: "8651-1652",
     description: "Mantenimientos e instalaciones de aires acondicionados",
     house: "Casa 76",
-    image: "https://images.unsplash.com/photo-1594900762142-ff0f6dbb6ded?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1621905252870-b962cd99a4e8?auto=format&fit=crop&q=80&w=600",
     keywords: ["aire acondicionado", "a/c", "mantenimiento", "instalación", "doy aire", "clima"]
   },
   {
@@ -330,14 +407,14 @@ const MOCK_DATA = [
   },
   {
     id: 2,
-    name: "Aires Acondicionados Alonso",
+    name: "Ingeniería Alonso",
     type: "vecino",
     category: "Hogar",
     phone: "8781-7426",
-    description: "Servicio de mantenimiento e instalación de equipos de aire acondicionado. Atención rápida al estar dentro de Condominio Caoba.",
+    description: "Servicios de ingeniería eléctrica y mecánica en general. Atención rápida dentro de Condominio Caoba.",
     house: "Casa 14",
     image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=600",
-    keywords: ["aire acondicionado", "a/c", "mantenimiento", "instalación", "refrigeración", "alonso", "clima", "frío"]
+    keywords: ["ingeniería", "eléctrica", "mecánica", "electricista", "electricidad", "alonso", "reparaciones"]
   },
   {
     id: 3,
