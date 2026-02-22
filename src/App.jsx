@@ -12,7 +12,7 @@ const MOCK_DATA = [
     phone: "8604-0842",
     description: "Servicio recomendado por vecinos para instalación y mantenimiento de aires acondicionados.",
     location: "Viene a Condominio Caoba",
-    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&q=80&w=600",
     keywords: ["aire acondicionado", "a/c", "mantenimiento", "instalación", "mauricio", "clima"]
   },
   {
