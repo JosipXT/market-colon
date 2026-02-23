@@ -9,6 +9,7 @@ const MOCK_DATA = [
     name: "Main Street Mágico",
     type: "vecino",
     category: "Servicios",
+    phone: "8838-6373",
     description: "Agente Certificada de Disney y Universal. Asesoría y acompañamiento para viajes a Orlando y California totalmente gratis. Te ayudo a planear tus mágicas vacaciones.",
     house: "Casa 14",
     image: "https://imagedelivery.net/0F92Czxm-YSY0EqFzZS4jA/29b354a9-76c1-459c-5b2f-8f8940756f00/public",
