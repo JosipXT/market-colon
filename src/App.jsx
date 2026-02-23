@@ -5,6 +5,17 @@ import { Globe, Search, Star, MapPin, Phone, MessageCircle, User, ShieldCheck, B
 const MOCK_DATA = [
   // --- Condominio Caoba (Locales/Recomendados) ---
   {
+    id: 64,
+    name: "Main Street Mágico",
+    type: "vecino",
+    category: "Servicios",
+    description: "Agente Certificada de Disney y Universal. Asesoría y acompañamiento para viajes a Orlando y California totalmente gratis. Te ayudo a planear tus mágicas vacaciones.",
+    house: "Casa 14",
+    image: "https://imagedelivery.net/0F92Czxm-YSY0EqFzZS4jA/29b354a9-76c1-459c-5b2f-8f8940756f00/public",
+    website: "https://linktr.ee/mainstreetmagico",
+    keywords: ["disney", "universal", "agencia", "viajes", "orlando", "california", "main street mágico", "asesoría", "vacaciones"]
+  },
+  {
     id: 63,
     name: "Rapirescate Fugas y Baños",
     type: "recomendado",
@@ -34,7 +45,7 @@ const MOCK_DATA = [
     phone: "8948-1185",
     description: "Fontanero de confianza recomendado por la comunidad para todo tipo de reparaciones e instalaciones.",
     location: "Viene a Condominio Caoba",
-    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1520699697851-3dc68aa3a474?auto=format&fit=crop&q=80&w=600",
     keywords: ["fontanero", "francisco", "fugas", "tuberías", "plomero", "mantenimiento hogar"]
   },
   {
@@ -75,7 +86,7 @@ const MOCK_DATA = [
     name: "Divina Tentación",
     type: "vecino",
     category: "Comida",
-    phone: "8820-2857",
+    phone: "8828-2857",
     website: "https://divinatentacioncr.com",
     description: "Sidra Artesanal “Divina Tentación” es una bebida fermentada de manzana elaborada mediante un proceso controlado y natural. Su color dorado natural, aroma fresco a manzana y sabor equilibrado la convierten en una sidra versátil, ideal tanto para consumo casual como para experiencias gastronómicas. Con un contenido alcohólico moderado al 6%.",
     house: "Casa 103",
@@ -464,6 +475,7 @@ const MOCK_DATA = [
     description: "Deliciosos tequeños de queso con salsa de ajo y porciones de quesillo casero. Los venden tanto congelados como listos para eventos con la estación de Tequeños. Directo a tu puerta.",
     house: "Casa 92",
     image: "https://imagedelivery.net/0F92Czxm-YSY0EqFzZS4jA/2194584f-67f2-4067-a5f0-d810f452c600/public",
+    imagePosition: "object-[center_20%]",
     keywords: ["tequeños", "quesillo", "comida", "postres", "queso", "venezolana", "doña ana", "deditos", "eventos", "congelados"]
   },
   {
@@ -1254,7 +1266,7 @@ export default function App() {
                   <img
                     src={provider.image}
                     alt={provider.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${provider.imagePosition || 'object-center'}`}
                   />
                   {/* Badge over image */}
                   <div className={`absolute top-4 left-4 px-3 py-1.5 rounded-lg text-xs font-bold border flex items-center shadow-sm backdrop-blur-sm ${getBadgeStyle(provider.type)}`}>
