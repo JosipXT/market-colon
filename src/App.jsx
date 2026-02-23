@@ -5,6 +5,18 @@ import { Globe, Search, Star, MapPin, Phone, MessageCircle, User, ShieldCheck, B
 const MOCK_DATA = [
   // --- Condominio Caoba (Locales/Recomendados) ---
   {
+    id: 57,
+    name: "Divina Tentación",
+    type: "vecino",
+    category: "Comida",
+    phone: "8820-2857",
+    website: "https://divinatentacioncr.com",
+    description: "Sidra Artesanal “Divina Tentación” es una bebida fermentada de manzana elaborada mediante un proceso controlado y natural. Su color dorado natural, aroma fresco a manzana y sabor equilibrado la convierten en una sidra versátil, ideal tanto para consumo casual como para experiencias gastronómicas. Con un contenido alcohólico moderado al 6%.",
+    house: "Casa 103",
+    image: "https://imagedelivery.net/0F92Czxm-YSY0EqFzZS4jA/89b1ccf3-b20d-46e7-d274-f8d905006900/public",
+    keywords: ["sidra", "artesanal", "manzana", "fermentada", "bebida", "divina tentación", "manzanas"]
+  },
+  {
     id: 56,
     name: "Sari Fusión Mágica",
     type: "general",
@@ -693,6 +705,27 @@ const TypewriterEffect = () => {
   );
 };
 
+const ExpandableDescription = ({ text }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const isLong = text && text.length > 120;
+
+  return (
+    <div className="flex-1 mb-6 flex flex-col items-start w-full">
+      <p className={`text-slate-600 text-sm w-full ${!isExpanded ? 'line-clamp-3' : ''}`}>
+        {text}
+      </p>
+      {isLong && (
+        <button
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="text-[#DCA742] hover:text-[#c49236] text-xs font-bold mt-1.5 transition-colors focus:outline-none"
+        >
+          {isExpanded ? 'Ver menos' : 'Leer más...'}
+        </button>
+      )}
+    </div>
+  );
+};
+
 // --- COMPONENTE PRINCIPAL ---
 export default function App() {
   const [activeTab, setActiveTab] = useState('todos');
@@ -1176,9 +1209,7 @@ export default function App() {
                     {provider.category}
                   </div>
 
-                  <p className="text-slate-600 text-sm mb-6 line-clamp-3 flex-1">
-                    {provider.description}
-                  </p>
+                  <ExpandableDescription text={provider.description} />
 
                   <div className="space-y-2 mb-6 text-sm text-slate-600 bg-slate-50 p-3 rounded-xl">
                     {provider.house ? (
