@@ -5,12 +5,23 @@ import { Globe, Search, Star, MapPin, Phone, MessageCircle, User, ShieldCheck, B
 const MOCK_DATA = [
   // --- Condominio Caoba (Locales/Recomendados) ---
   {
+    id: 59,
+    name: "Macrobiótica Rio Oro",
+    type: "general",
+    category: "Salud",
+    phone: "8916-4640",
+    description: "Gran variedad de productos naturales, vitaminas y suplementos para tu bienestar integral.",
+    location: "50 norte del BCR centro comercial Villa Colón",
+    image: "https://imagedelivery.net/0F92Czxm-YSY0EqFzZS4jA/eeb829b8-f531-4a3a-0f14-117d3b6e6400/public",
+    keywords: ["macrobiótica", "salud", "natural", "suplementos", "vitaminas", "rio oro", "villa colón"]
+  },
+  {
     id: 58,
     name: "A/O Personal Shoper",
-    type: "general",
+    type: "vecino",
     category: "Servicios",
     description: "Compras en Estados Unidos por encargo de cualquier tienda u outlet. Se cobra un porcentaje de la factura, sin importar el peso de los productos.",
-    location: "Envíos",
+    house: "Casa 112",
     image: "https://imagedelivery.net/0F92Czxm-YSY0EqFzZS4jA/461fff9c-3d4a-4bbe-404b-1e1d2a854700/public",
     keywords: ["compras", "estados unidos", "usa", "encargo", "outlets", "personal shopper", "a/o", "importación"]
   },
