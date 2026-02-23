@@ -64,6 +64,7 @@ const MOCK_DATA = [
     name: "A/O Personal Shoper",
     type: "vecino",
     category: "Servicios",
+    phone: "7267-2025",
     description: "Compras en Estados Unidos por encargo de cualquier tienda u outlet. Se cobra un porcentaje de la factura, sin importar el peso de los productos.",
     house: "Casa 112",
     image: "https://imagedelivery.net/0F92Czxm-YSY0EqFzZS4jA/461fff9c-3d4a-4bbe-404b-1e1d2a854700/public",
