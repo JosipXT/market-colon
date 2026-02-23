@@ -610,7 +610,7 @@ const MOCK_DATA = [
     type: "general",
     category: "Comida",
     phone: "6159-5851",
-    description: "Excelente bar y restaurante con cervezas artesanales y un ambiente indómito. Libre de reggaetón.",
+    description: "Excelente bar y restaurante con cervezas artesanales y un ambiente indómito.",
     location: "50m este de la escuela de Brasil de Mora",
     image: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=80&w=600",
     keywords: ["restaurante", "bar", "cerveza", "artesanal", "pub", "comida", "hamburguesas", "la planta"],
