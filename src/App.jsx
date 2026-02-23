@@ -5,6 +5,50 @@ import { Globe, Search, Star, MapPin, Phone, MessageCircle, User, ShieldCheck, B
 const MOCK_DATA = [
   // --- Condominio Caoba (Locales/Recomendados) ---
   {
+    id: 63,
+    name: "Rapirescate Fugas y Baños",
+    type: "recomendado",
+    category: "Hogar",
+    phone: "2297-0296",
+    description: "Expertos en fontanería general. Solución de fugas, reparación y mantenimiento de baños.",
+    location: "Viene a Condominio Caoba",
+    image: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&q=80&w=600",
+    keywords: ["fontanería", "fugas", "baños", "tuberías", "fontanero", "plomero", "rapirescate"]
+  },
+  {
+    id: 62,
+    name: "Marco Soldadura Fontanería Zambrana",
+    type: "recomendado",
+    category: "Hogar",
+    phone: "8642-0251",
+    description: "Servicios profesionales de fontanería y soldadura. Trabajos garantizados recomendados por vecinos.",
+    location: "Viene a Condominio Caoba",
+    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=600",
+    keywords: ["fontanero", "soldadura", "marco", "zambrana", "plomero", "tuberías", "reparaciones"]
+  },
+  {
+    id: 61,
+    name: "Francisco Fontanero",
+    type: "recomendado",
+    category: "Hogar",
+    phone: "8948-1185",
+    description: "Fontanero de confianza recomendado por la comunidad para todo tipo de reparaciones e instalaciones.",
+    location: "Viene a Condominio Caoba",
+    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=600",
+    keywords: ["fontanero", "francisco", "fugas", "tuberías", "plomero", "mantenimiento hogar"]
+  },
+  {
+    id: 60,
+    name: "Rapi Rescate",
+    type: "recomendado",
+    category: "Hogar",
+    phone: "8558-9347",
+    description: "Empresa de fontanería para atención rápida de emergencias y mantenimiento residencial.",
+    location: "Viene a Condominio Caoba",
+    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=600",
+    keywords: ["fontanería", "rapi rescate", "fugas", "emergencia", "fontanero", "plomero", "tubos"]
+  },
+  {
     id: 59,
     name: "Macrobiótica Rio Oro",
     type: "general",
