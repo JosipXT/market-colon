@@ -5,6 +5,16 @@ import { Globe, Search, Star, MapPin, Phone, MessageCircle, User, ShieldCheck, B
 const MOCK_DATA = [
   // --- Condominio Caoba (Locales/Recomendados) ---
   {
+    id: 58,
+    name: "A/O Personal Shoper",
+    type: "general",
+    category: "Servicios",
+    description: "Compras en Estados Unidos por encargo de cualquier tienda u outlet. Se cobra un porcentaje de la factura, sin importar el peso de los productos.",
+    location: "Envíos",
+    image: "https://imagedelivery.net/0F92Czxm-YSY0EqFzZS4jA/461fff9c-3d4a-4bbe-404b-1e1d2a854700/public",
+    keywords: ["compras", "estados unidos", "usa", "encargo", "outlets", "personal shopper", "a/o", "importación"]
+  },
+  {
     id: 57,
     name: "Divina Tentación",
     type: "vecino",
@@ -395,10 +405,10 @@ const MOCK_DATA = [
     type: "vecino",
     category: "Comida",
     phone: "8309-5649",
-    description: "Deliciosos tequeños de queso con salsa de ajo y porciones de quesillo casero. Directo a tu puerta.",
+    description: "Deliciosos tequeños de queso con salsa de ajo y porciones de quesillo casero. Los venden tanto congelados como listos para eventos con la estación de Tequeños. Directo a tu puerta.",
     house: "Casa 92",
-    image: "https://images.unsplash.com/photo-1587603366933-aa6947174c65?auto=format&fit=crop&q=80&w=600",
-    keywords: ["tequeños", "quesillo", "comida", "postres", "queso", "venezolana", "doña ana", "deditos"]
+    image: "https://imagedelivery.net/0F92Czxm-YSY0EqFzZS4jA/2194584f-67f2-4067-a5f0-d810f452c600/public",
+    keywords: ["tequeños", "quesillo", "comida", "postres", "queso", "venezolana", "doña ana", "deditos", "eventos", "congelados"]
   },
   {
     id: 16,
