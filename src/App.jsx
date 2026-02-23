@@ -7,12 +7,12 @@ const MOCK_DATA = [
   {
     id: 65,
     name: "Colitas Petcare",
-    type: "recomendado",
+    type: "vecino",
     category: "Mascotas",
     phone: "8309-5649",
     website: "https://www.instagram.com/colitas_petcare/",
     description: "Servicio confiable y afectuoso de paseos y cuidado de mascotas a domicilio. Atención exclusiva para vecinos del Condominio Caoba y zonas aledañas en Ciudad Colón.",
-    location: "Condominio Caoba y Ciudad Colón",
+    house: "Casa 92",
     image: "https://imagedelivery.net/0F92Czxm-YSY0EqFzZS4jA/2bd0f062-d119-4b98-e246-bcb95d50a500/public",
     keywords: ["mascotas", "perros", "gatos", "cuidado", "paseos", "domicilio", "colitas", "petcare", "niñera"]
   },
