@@ -476,6 +476,7 @@ const MOCK_DATA = [
     description: "Deliciosos tequeños de queso con salsa de ajo y porciones de quesillo casero. Los venden tanto congelados como listos para eventos con la estación de Tequeños. Directo a tu puerta.",
     house: "Casa 92",
     image: "https://imagedelivery.net/0F92Czxm-YSY0EqFzZS4jA/cf2a116a-4ff8-483c-523f-99a397e11b00/public",
+    imagePosition: "object-[center_20%]",
     keywords: ["tequeños", "quesillo", "comida", "postres", "queso", "venezolana", "doña ana", "deditos", "eventos", "congelados"]
   },
   {
