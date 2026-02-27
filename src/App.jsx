@@ -628,6 +628,18 @@ const MOCK_DATA = [
 
   // --- Ciudad Colón (Reales extraídos de Google Maps) ---
   {
+    id: 68,
+    name: "Joyería y Relojería Mundo Electrónico",
+    type: "general",
+    category: "Servicios",
+    phone: "2249-3845",
+    website: "https://www.facebook.com/JRMundoElectronico/?locale=es_LA",
+    description: "Joyería y relojería en el centro de Ciudad Colón con más de 20 años de experiencia prestando servicio en el cantón de Mora.",
+    location: "Centro de Ciudad Colón",
+    image: "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&q=80&w=600",
+    keywords: ["joyería", "relojería", "reloj", "joyas", "mundo", "electrónico", "reparación", "venta"]
+  },
+  {
     id: 4,
     name: "Anfiteatro de Villa",
     type: "general",
