@@ -5,6 +5,17 @@ import { Globe, Search, Star, MapPin, Phone, MessageCircle, User, ShieldCheck, B
 const MOCK_DATA = [
   // --- Condominio Caoba (Locales/Recomendados) ---
   {
+    id: 69,
+    name: "Consultorías y Asesorías Financieras JOKABI",
+    type: "vecino",
+    category: "Servicios",
+    phone: "8313-0009",
+    description: "Brindamos asesoría financiera y soporte integral al sector público y privado con más de 32 años de experiencia. Ofrecemos: • IVA • Estados financieros • Certificaciones de ingresos y flujos de caja • Declaraciones de Impuesto sobre la Renta y sociedades inactivas • RTBF. Especialistas en asesoría fiscal, auditoría y consultoría ajustada a las necesidades de cada cliente.",
+    house: "Casa 100",
+    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=600",
+    keywords: ["asesoría", "financiera", "jokabi", "contabilidad", "auditoría", "impuestos", "certificaciones", "declaraciones", "iva", "renta", "finanzas", "asesoria", "auditoria"]
+  },
+  {
     id: 67,
     name: "Forca",
     type: "recomendado",
