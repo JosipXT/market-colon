@@ -10,9 +10,9 @@ const MOCK_DATA = [
     type: "vecino",
     category: "Servicios",
     phone: "8313-0009",
-    description: "Brindamos asesoría financiera y soporte integral al sector público y privado con más de 32 años de experiencia. Ofrecemos: • IVA • Estados financieros • Certificaciones de ingresos y flujos de caja • Declaraciones de Impuesto sobre la Renta y sociedades inactivas • RTBF. Especialistas en asesoría fiscal, auditoría y consultoría ajustada a las necesidades de cada cliente.",
+    description: "Brindamos asesoría financiera y soporte integral al sector público y privado. Contamos con más de 32 años de experiencia y permanencia en el mercado, respaldando a empresas y profesionales en áreas clave como auditoría, contabilidad y gestión financiera.\n\nOfrecemos servicios mensuales y anuales que incluyen:\n• Cálculo y presentación de declaraciones de IVA\n• Elaboración de estados financieros mensuales y/o anuales\n• Certificaciones de ingresos\n• Certificaciones de flujos de caja proyectados\n• Certificaciones de estados financieros\n• Presentación de declaraciones anuales de sociedades inactivas\n• Asesoría y presentación del RTBF (Registro de Transparencia de Beneficiarios Finales)\n• Cálculo y presentación de declaraciones del Impuesto sobre la Renta\n\nSomos especialistas en asesoría fiscal, auditoría operativa y financiera, así como en consultoría y asesoría financiera, ofreciendo soluciones claras, confiables y ajustadas a las necesidades de cada cliente.",
     house: "Casa 100",
-    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=600",
+    image: "https://imagedelivery.net/0F92Czxm-YSY0EqFzZS4jA/7ab5a1da-c284-48e4-b919-a8e35fe1d600/public",
     keywords: ["asesoría", "financiera", "jokabi", "contabilidad", "auditoría", "impuestos", "certificaciones", "declaraciones", "iva", "renta", "finanzas", "asesoria", "auditoria"]
   },
   {
@@ -849,7 +849,7 @@ const ExpandableDescription = ({ text }) => {
 
   return (
     <div className="flex-1 mb-6 flex flex-col items-start w-full">
-      <p className={`text-slate-600 text-sm w-full ${!isExpanded ? 'line-clamp-3' : ''}`}>
+      <p className={`text-slate-600 text-sm w-full whitespace-pre-line ${!isExpanded ? 'line-clamp-3' : ''}`}>
         {text}
       </p>
       {isLong && (
