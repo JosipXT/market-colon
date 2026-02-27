@@ -5,6 +5,29 @@ import { Globe, Search, Star, MapPin, Phone, MessageCircle, User, ShieldCheck, B
 const MOCK_DATA = [
   // --- Condominio Caoba (Locales/Recomendados) ---
   {
+    id: 67,
+    name: "Forca",
+    type: "recomendado",
+    category: "Mascotas",
+    phone: "8869-8119",
+    website: "https://www.instagram.com/forcacostarica?igsh=MW02cnQ4dzNkdHF5Mg==",
+    description: "Acompañamiento humano canino desde el vínculo, la calma y la conciencia. Procesos de duelo, conexión emocional, energía y transformación.",
+    location: "Viene al condominio",
+    image: "https://imagedelivery.net/0F92Czxm-YSY0EqFzZS4jA/0646eb44-3e3a-4bbc-4e9d-a1c74266ca00/public",
+    keywords: ["mascotas", "perros", "canino", "comportamiento", "forca", "acompañamiento"]
+  },
+  {
+    id: 66,
+    name: "Vieras que",
+    type: "recomendado",
+    category: "Mascotas",
+    phone: "8347-0545",
+    website: "https://www.instagram.com/vierasquecr?igsh=ZDc2Y2ZyeGJvZm1t",
+    description: "Tu historia con tu mascota merece ser contada. Nosotros la transformamos en recuerdos eternos.",
+    image: "https://imagedelivery.net/0F92Czxm-YSY0EqFzZS4jA/f0d298ca-c86a-4148-0656-fac466511100/public",
+    keywords: ["mascotas", "recuerdos", "fotos", "vieras que", "eternos"]
+  },
+  {
     id: 65,
     name: "Colitas Petcare",
     type: "vecino",
@@ -112,6 +135,7 @@ const MOCK_DATA = [
     type: "general",
     category: "Comida",
     phone: "4052-3142",
+    whatsapp2: "7037-2881",
     website: "https://www.instagram.com/sari_fusionmagica/",
     description: "Comida fusión colombiana y tica. Una experiencia mágica de sabores.",
     location: "Ciudad Colón",
